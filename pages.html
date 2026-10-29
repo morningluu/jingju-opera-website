@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="国粹·京剧全部十二个主题页面索引：发展历程、四大行当、声腔、伴奏、表演、脸谱、舞台美术、京剧欣赏、艺术家等。">
+  <title>全部页面 · 国粹京剧</title>
+  <style>
+    :root { --ink:#180707; --red:#8f1d1d; --red-bright:#c7352b; --gold:#d8b56a; --paper:#f4ead8; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      padding: clamp(26px, 6vw, 72px);
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(199,53,43,.2), transparent 32%),
+        radial-gradient(circle at 88% 92%, rgba(216,181,106,.1), transparent 34%),
+        repeating-linear-gradient(135deg, rgba(255,255,255,.016) 0 1px, transparent 1px 9px),
+        var(--ink);
+      font-family: "Songti SC", "Noto Serif SC", "SimSun", Georgia, serif;
+    }
+    a { color: inherit; }
+    .shell { width: min(1180px, 100%); margin: 0 auto; }
+    .top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid rgba(216,181,106,.28); }
+    .back { color: rgba(244,234,216,.58); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 11px; letter-spacing: .18em; text-decoration: none; }
+    .back:hover { color: var(--gold); }
+    .kicker { margin: 0 0 10px; color: var(--gold); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10px; letter-spacing: .36em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(34px, 6vw, 64px); letter-spacing: .1em; line-height: 1.1; }
+    h1 span { color: var(--gold); }
+    .lede { max-width: 380px; margin: 0; color: rgba(244,234,216,.55); font-size: 13px; line-height: 2; letter-spacing: .04em; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 42px; background: rgba(216,181,106,.2); border: 1px solid rgba(216,181,106,.2); }
+    .card { position: relative; display: flex; flex-direction: column; min-height: 190px; padding: 24px 24px 22px; background: var(--ink); text-decoration: none; transition: background .25s ease; }
+    .card:hover, .card:focus-visible { background: #2a0b0b; outline: none; }
+    .num { color: var(--red-bright); font-family: Georgia, serif; font-size: 12px; letter-spacing: .12em; }
+    .card h2 { margin: 20px 0 10px; font-size: 25px; font-weight: 600; letter-spacing: .12em; }
+    .card p { margin: 0; color: rgba(244,234,216,.46); font-size: 12px; line-height: 1.8; }
+    .go { margin-top: auto; padding-top: 20px; color: var(--gold); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10px; letter-spacing: .2em; }
+    .card::after { content: "→"; position: absolute; right: 24px; bottom: 20px; color: var(--gold); opacity: .5; transition: transform .25s ease, opacity .25s ease; }
+    .card:hover::after { transform: translateX(4px); opacity: 1; }
+    .foot { margin-top: 30px; color: rgba(244,234,216,.28); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10px; letter-spacing: .14em; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .card { min-height: 156px; } .lede { max-width: none; } }
+    @media (prefers-reduced-motion: reduce) { .card, .card::after { transition: none; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div>
+        <p class="kicker">Index of Pages</p>
+        <h1>全部页面<span> · 十二</span></h1>
+      </div>
+      <div>
+        <p class="lede">从历史源流到行当、声腔、表演、脸谱与舞美，十二个页面构成一条由“史”入“艺”的京剧文化路径。</p>
+        <p><a class="back" href="index.html">← 返回入口页</a></p>
+      </div>
+    </header>
+    <section class="grid" aria-label="页面列表">
+      <a class="card" href="首页/首页/首页.html"><span class="num">01</span><h2>首页</h2><p>国粹主视觉 · 经典剧目 · 艺术家导览</p><span class="go">进入页面</span></a>
+      <a class="card" href="关于京剧（发展历程）/关于京剧（发展历程）/发展历程.html"><span class="num">02</span><h2>发展历程</h2><p>徽班进京 · 流派形成 · 京剧的百年流变</p><span class="go">进入页面</span></a>
+      <a class="card" href="关于京剧（四大行当）/关于京剧（四大行当）/关于京剧（四大行当）.html"><span class="num">03</span><h2>四大行当</h2><p>生、旦、净、丑的角色分工与造型</p><span class="go">进入页面</span></a>
+      <a class="card" href="关于京剧（声腔体系)/关于京剧（声腔体系）/关于京剧（声腔体系）.html"><span class="num">04</span><h2>声腔体系</h2><p>西皮、二黄与板式结构</p><span class="go">进入页面</span></a>
+      <a class="card" href="关于京剧（伴奏体系)/关于京剧（伴奏体系）/关于京剧（伴奏体系）.html"><span class="num">05</span><h2>伴奏体系</h2><p>文场、武场与代表性乐器</p><span class="go">进入页面</span></a>
+      <a class="card" href="艺术特色（表演体系)/艺术特色（表演体系）/艺术特色（表演体系）.html"><span class="num">06</span><h2>表演体系</h2><p>四功五法与程式化的舞台语言</p><span class="go">进入页面</span></a>
+      <a class="card" href="艺术特色（脸谱艺术）/艺术特色（脸谱艺术）/艺术特色（脸谱艺术）.html"><span class="num">07</span><h2>脸谱艺术</h2><p>色彩寓意、谱式与人物性格</p><span class="go">进入页面</span></a>
+      <a class="card" href="艺术特色（舞台美术）/艺术特色（舞台美术）/艺术特色（舞台美术）.html"><span class="num">08</span><h2>舞台美术</h2><p>一桌二椅、服装、砌末与空间</p><span class="go">进入页面</span></a>
+      <a class="card" href="京剧欣赏/京剧欣赏/京剧欣赏/京剧欣赏.html"><span class="num">09</span><h2>京剧欣赏</h2><p>经典唱段与剧目导赏</p><span class="go">进入页面</span></a>
+      <a class="card" href="艺术家/艺术家/艺术家.html"><span class="num">10</span><h2>艺术家</h2><p>名家风采与艺术成就</p><span class="go">进入页面</span></a>
+      <a class="card" href="联系我们/联系我们/联系我们.html"><span class="num">11</span><h2>联系我们</h2><p>票友交流与联系信息</p><span class="go">进入页面</span></a>
+      <a class="card" href="登录/登录/登录切片.html"><span class="num">12</span><h2>登录</h2><p>会员登录界面</p><span class="go">进入页面</span></a>
+    </section>
+    <p class="foot">PEKING OPERA · GRADUATION PROJECT · BUILT WITH CLAUDE CODE</p>
+  </main>
+</body>
+</html>
